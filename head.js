@@ -6,7 +6,6 @@ const assertEqual = function(actual, expected) {
   }
 }
 function head(a) {
-  for (let i in a) 
   return a[i];
 }
 
