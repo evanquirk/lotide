@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 }
 function head(a) {
-  return a[i];
+  return a[0];
 }
 
 assertEqual(head([5,6,7]), 5);
