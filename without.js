@@ -1,13 +1,14 @@
+
+
 const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
+  if (array1.length === array2.length) {
+    for (let i = 0; i < array1.length; i++) {
       if (array1[i] !== array2[i]) {
         return false;
       }
+      return true;
+    }
   }
-  return true;
 };
 
 const assertArraysEqual = function(array1, array2) {
@@ -44,12 +45,26 @@ const without = function(source, itemsToRemove) {
   }
   return results
 };
+// GIO'S TEST CASES //
+// assertArraysEqual(
+//   without([1, 2, 3, 3, 3, 4, 'dog', 'dog', '1', '2', '3', '4', 'cat', 1, 2, 5, 6], [3, 'dog', '3', 5]),
+//   [1, 2, 4, '1', '2','4', 'cat', 1, 2, 6]
+// );
+// assertArraysEqual(
+//   without(['a', 'b', 1, 2], []),
+//   ['a', 'b', 1, 2]
+// );
+// assertArraysEqual(
+//   without([], ['a']),
+//   []
+// );
+// assertArraysEqual(
+//   without(['a', 'a', 'a', 'a'], ['a']),
+//   []
+// );
 
-// without([1, 2, 3], [1]) // => [2, 3]
-// without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-// console.log(words);
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]); // no need to capture return value for this test case
+// // Make sure the original array was not altered by the without function
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// // console.log(words);
