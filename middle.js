@@ -20,25 +20,25 @@ const assertArraysEqual = function(array1, array2) {
 
 const middle = function(array) {
 
-  const middleArr = [];
-// For arrays with one or two elements, there is no middle. Return an empty array.
+  const results = [];
+  // For arrays with one or two elements, there is no middle. Return an empty array.
   if (array.length <= 2) {
-    return middleArr;
-  } else {  
-// find middle of array by dividing by 2. Use Math.ceil to round to next largest integer.
-    let middleIndex = Math.ceil(array.length / 2) - 1; 
+    return results;
+  } else {
+    // find middle of array by dividing by 2. Use Math.ceil to round to next largest integer.
+    let middleIndex = Math.ceil(array.length / 2) - 1;
     console.log(middleIndex);
     //rounds the middle array down. -1 to account for 0 index
-    if (array.length % 2 !== 0) { 
+    if (array.length % 2 !== 0) {
       //if array is and odd length, middle is clearly defined.
-      middleArr.push(array[middleIndex]);
+      results.push(array[middleIndex]);
     } else {
       //array is even length, push round down, and next index
-      middleArr.push(array[middleIndex]);
-      middleArr.push(array[middleIndex + 1]);
+      results.push(array[middleIndex]);
+      results.push(array[middleIndex + 1]);
     }
-    return middleArr;
+    return results;
   }
 };
 
-// console.log(middle([1, 2, 4, 6, 9, 10]));
+console.log(middle([1, 2, 4, 6, 9, 10]));
