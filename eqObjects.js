@@ -36,7 +36,7 @@ const eqObjects = function (object1, object2) {
         // if the keys in the object key arrays match
         if (eqArrays(object1[i], object2[i]) === false) {
           return false
-          // run through eqArrays to make sure the keys match
+          // run through eqArrays to bypass === issue
         }
       } else {
         if (object1[i] !== object2[i]) {
