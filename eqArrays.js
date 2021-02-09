@@ -1,19 +1,14 @@
-//Assert Equal Function (to be added globally later)
-const eqArrays = function(array1,array2) {
-  //function is passed 2 argumenets - array 1 and array 2
-  if (array1.length !== array2.length) {
-    // if the lengths do not match, return false
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    //loop through the first array
-    if (array1[i] !== array2[i]) {
-    // if the element in array 1 does not match the same element in array 2, return false
-      return false;
+  const eqArrays = function(array1, array2) {
+  let output = true;
+  if (array1.length !== array2.length) return false;
+  for (let element = 0; element < array1.length; element += 1) {
+    if (Array.isArray(array1[element]) || Array.isArray(array2[element])) {
+      output = output && eqArrays(array1[element], array2[element]);
+    } else if (array1[element] !== array2[element]) {
+      output = output && false;
     }
   }
-  return true;
-  // if everything matches, return true
+  return output;
 };
 
 module.exports = eqArrays;

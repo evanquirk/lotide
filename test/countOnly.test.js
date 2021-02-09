@@ -1,4 +1,3 @@
-const { deepEqual } = require('assert');
 const { assert } = require('chai');
 const { countOnly } = require('../index');
 

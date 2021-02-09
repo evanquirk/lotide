@@ -1,9 +1,9 @@
 const tail = function(array) {
-  let tailArray = [];
+  let results = [];
   for (let i = 1; i < array.length; i ++) {
-    tailArray.push(array[i]);
+    results.push(array[i]);
   }
-  return tailArray;
+  return results;
 };
 
 module.exports = tail;

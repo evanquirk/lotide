@@ -1,15 +1,5 @@
-//copy in assterEqual function
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🚨🚨🚨Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const countLetters = function(input) {
-
-  const result = {};
+  const results = {};
   //for of loop 
   for (const letter of input) {
     //not counting the space
@@ -22,5 +12,7 @@ const countLetters = function(input) {
         result[letter] = 1;
       }
     }
-  } return result;
+  } return results;
 };
+
+module.exports = countLetters;
