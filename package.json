@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@evanquirk/lotide",
   "version": "1.0.0",
   "description": "A mini clone of the Lodash library by evanquirk",
   "main": "README.md",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/evanquirk/lotide#readme",
   "dependencies": {
     "chai": "^4.3.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "my-package": "^0.0.0"
   }
 }
