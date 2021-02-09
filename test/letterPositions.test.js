@@ -1,5 +1,5 @@
-const { assert } = require("chai");
-const letterPositions = require("../letterPositions");
+const { assert } = require('chai');
+const { letterPositions } = require('../index');
 
 describe("#letterPositions", () => {
   it("should return [0] for h in 'hello'", () => {

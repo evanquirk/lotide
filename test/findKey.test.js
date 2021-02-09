@@ -1,5 +1,5 @@
-const { assert } = require("chai");
-const findKey = require("../findKey");
+const { assert } = require('chai');
+const { findKey } = require('../index');
 
 describe("#findKey", () => {
   const test = {
@@ -17,5 +17,5 @@ describe("#findKey", () => {
   it("should return Akaleri for x => x.stars === 2", () => {
     assert.strictEqual(findKey(test, x => x.stars === 3), "Akaleri");
   });
-  
+
 });

@@ -1,5 +1,5 @@
-const { assert } = require("chai");
-const { map } = require("../index");
+const { assert } = require('chai');
+const { map } = require('../index');
 
 describe("#map", () => {
   const words1 = ["ground", "control", "to", "major", "tom"];

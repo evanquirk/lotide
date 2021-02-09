@@ -1,5 +1,5 @@
-const { assert } = require("chai");
-const { takeUntil } = require("../index");
+const { assert } = require('chai');
+const { takeUntil } = require('../index');
 
 describe("#takeUntil", () => {
   const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
