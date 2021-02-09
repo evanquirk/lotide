@@ -1,7 +1,6 @@
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   // declare object literal for results
-  
   for (let item of allItems) {
     // loop through items in allItems array
     if (itemsToCount[item]) {
@@ -10,13 +9,13 @@ const countOnly = function(allItems, itemsToCount) {
         //if our results object already contain that item, then...
         results[item] += 1;
         // add 1 more value to that item.
-        } else {
-          // if it's a new item in our results...
-          results[item] = 1;
-          // our item is equal to 1
-        }
+      } else {
+        // if it's a new item in our results...
+        results[item] = 1;
+        // our item is equal to 1
       }
     }
+  }
   return results;
 };
 

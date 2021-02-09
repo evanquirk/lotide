@@ -1,5 +1,5 @@
-const { eqObjects } = require('../index');
 const { assert } = require('chai');
+const { eqObjects } = require('../index');
 
 describe("#eqObjects", () => {
   const ab = { a: "1", b: "2" };

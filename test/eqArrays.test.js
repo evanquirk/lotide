@@ -1,5 +1,5 @@
-const { eqArrays } = require('../index');
 const { assert } = require('chai');
+const { eqArrays } = require('../index');
 
 describe("#eqArrays", () => {
   it("should return true for ([1, 2, 3], [1, 2, 3])", () => {

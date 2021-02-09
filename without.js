@@ -1,4 +1,3 @@
-
 const without = function(source, itemsToRemove) {
   const results = [];
   // loop through source array:
@@ -6,10 +5,10 @@ const without = function(source, itemsToRemove) {
     // check if item in source isn't in itemsToRemove:
     if (!itemsToRemove.includes(item)) {
       // add this item to results array:
-      results.push(item)
+      results.push(item);
     }
   }
-  return results
+  return results;
 };
 
 module.exports = without;
